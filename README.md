@@ -19,9 +19,6 @@ Every page can pass custom properties to handlebars template engine, define them
 
 #### Page example:
 
-    <meta name="description" content="{{description}}">
-    <meta name="keywords" content="{{keywords}}">
-
     @title Page title for the <title> tag
     @description Description for <meta name="description"> tag
     @keywords Keywords for <meta name="keywords"> tag
