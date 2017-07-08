@@ -1,0 +1,25 @@
+{
+  "name": "mdwebsite",
+  "version": "0.9.1",
+  "description": "markdown-based web site with prefabricated styles and syntax extensions",
+  "main": "mdwebsite.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node mdwebsite.js"
+  },
+  "keywords": [
+    "markdown",
+    "website",
+    "pages",
+    "md",
+    "site"
+  ],
+  "author": "Vladimir Fedorov (me@vladimirfedorov.com)",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.3",
+    "express-handlebars": "^3.0.0",
+    "handlebars": "^4.0.10",
+    "markdown-it": "^8.3.1"
+  }
+}
