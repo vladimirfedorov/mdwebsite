@@ -8,7 +8,10 @@ It is built to look great right out of the box.
 
 ## How to install
 
-    npm install mdwebsite
+    git clone https://github.com/vladimirfedorov/mdwebsite
+    cd mdwebsite
+    npm install
+    npm start
     
 ## How to use
 
