@@ -1,8 +1,7 @@
 {
   "name": "mdwebsite",
-  "version": "0.9.3",
+  "version": "0.9.5",
   "description": "markdown-based web site with predefined styles and syntax extensions",
-  "main": "mdwebsite.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node mdwebsite.js"
@@ -14,14 +13,10 @@
     "md",
     "site"
   ],
-  "files": [
-    "mdwebsite.js",
-    "core",
-    "api",
-    "pages",
-    "static",
-    "views"
-  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vladimirfedorov/mdwebsite"
+  },
   "author": "Vladimir Fedorov (me@vladimirfedorov.com)",
   "license": "MIT",
   "dependencies": {
