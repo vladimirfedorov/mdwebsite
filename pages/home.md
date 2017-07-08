@@ -45,7 +45,7 @@ It is built to look great right out of the box.
 ## How to use
 
 Default home page is `home.md`.
-Add .md files to the `pages` folder, links to `pages/nav.md` and footer content to `pages/footer.md`.
+Add .md files to the `pages` folder, links to that pages to `pages/nav.md` and footer content to `pages/footer.md`.
 
 Every page can pass custom properties to handlebars template engine, define them as @propertyName *property value*.
 
@@ -135,7 +135,3 @@ where *xx* can be 10, 20, 30, 40, 50, 60, 70, 80, 90 and 100 % of page's height.
 |`static` | javascript, css, images, etc.|
 |`views` | templates and partials for pages|
 
-### Maintenance mode
-----
-Whenever you need to put your website into maintenance mode, 
-add `pages/maintenance.md` file — any request will return this file instead of a requested page.
