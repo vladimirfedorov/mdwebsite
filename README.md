@@ -16,7 +16,7 @@ It is built to look great right out of the box.
 ## How to use
 
 Default home page is `home.md`.
-Add .md files to the `pages` folder, links to that pages to `pages/nav.md` and footer content to `pages/footer.md`.
+Add .md files to the `pages` folder, links to that pages to `views/partials/nav.hbs` and footer content to `views/partials/footer.hbs`.
 
 Every page can pass custom properties to handlebars template engine, define them as @propertyName *property value*.
 
