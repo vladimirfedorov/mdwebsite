@@ -74,12 +74,28 @@ function expandSections(s) {
         inSubsection = false,
         lines = s.trim().split('\n'),
         result = []
-
+    function getExtensions(classArray) {
+        var ext = [],
+            files = classArray.filter( (c) => c.startsWith('"') && c.endsWith('"') ),
+            file = files[0]
+        console.log('classArray: ' + classArray + ' files: ' + files)
+        if (classArray.indexOf('video') !== -1 && file !== undefined) {
+            ext.push('<video playsinline autoplay muted loop src=' + file + '></video>')
+        }
+        // cover must be the last element
+        if (classArray.indexOf('video') !== -1 || classArray.indexOf('image') !== -1 || classArray.indexOf('fixed-image') !== -1 || classArray.indexOf('slides') !== -1) {
+            ext.push('<div class="section-cover"></div>')
+        }
+        return ext.join('')
+    }
     function beginSection(classNames) {
-        var classString = classNames || 'default'
+        var classString = (classNames || 'default').replace(/&quot;/g, '"'),
+            classArray = classString.split(' '),
+            extensions = getExtensions(classArray),
+            classArray = classArray.filter( (c) => !(c.startsWith('"') && c.endsWith('"')) )
         if (inSubsection) endSubsection()
         if (inSection) endSection()
-        result.push('<section class="' + classString + '"><div class="section-wrapper">')
+        result.push('<section class="' + classArray.join(' ') + '">' + extensions + '<div class="section-wrapper">')
         inSection = true
     }
     function endSection() {
