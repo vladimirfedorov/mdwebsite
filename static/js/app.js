@@ -22,6 +22,23 @@
                     e.style.minHeight = (h * (step / 100)) + 'px'
                 })
             }
+            _e('section.video video').forEach(function(v) {
+                var vw = v.videoWidth,
+                    vh = v.videoHeight,
+                    vr = vw / vh,
+                    cw = v.parentElement.clientWidth,
+                    ch = v.parentElement.clientHeight,
+                    cr = cw / ch,
+                    w = vr > cr ? vw * ch / vh : cw,
+                    h = vr > cr ? ch : vh * cw / vw,
+                    t = -(h - ch) / 2.0 | 0,
+                    l = -(w - cw) / 2.0 | 0
+                v.style.maxWidth = (vr > cr ? '' : '100%')
+                v.style.maxHeight = (vr > cr ? '100%' : '')
+                v.style.top = t + 'px'
+                v.style.left = l + 'px'
+            })
+
         }
         /// Iterates over images and creates image titles
         this.appendImageTitles = function() {
