@@ -78,7 +78,6 @@ function expandSections(s) {
         var ext = [],
             files = classArray.filter( (c) => c.startsWith('"') && c.endsWith('"') ),
             file = files[0]
-        console.log('classArray: ' + classArray + ' files: ' + files)
         if (classArray.indexOf('video') !== -1 && file !== undefined) {
             ext.push('<video playsinline autoplay muted loop src=' + file + '></video>')
         }
