@@ -1,9 +1,10 @@
 @title Home
 @keywords mdwebsite,site,generator,markdown,server,web
+@description Page description
 
-@section hero image dark-content text-shadow dark-background background-image-city
+@section hero image dark-content text-shadow dark-background background-image-city extra-top-padding extra-bottom-padding
 
-@subsection dark-background extra-top-padding extra-bottom-padding
+@subsection dark-background 
 
 # mdwebsite
 
@@ -11,13 +12,13 @@
 
 ### much faster
 
-@subsection three columns dark-background
+@subsection three columns dark-background text-strong
 
 - ### Fast
 
-  Deploy anywhere with a single command.
+  Deploy anywhere with a couple of commands.
+  Runs on the mighty Node.js platform.
   Ready to go in a minute.
-  Runs on the mighty node.js platform.
 
 - ### Simple
   
@@ -28,6 +29,13 @@
 
   Convenient extensions to markdown help to build beautiful websites.
   This page is, actually, also a markdown page.
+
+
+@section video "/video/pexels-video-618513234.mp4" min-height-80 dark-content dark-cover-40
+
+# Hello there
+
+How are you doing?
 
 @section 
 
@@ -52,6 +60,12 @@ Add .md files to the `pages` folder, links to that pages to `views/partials/nav.
 
 Every page can pass custom properties to handlebars template engine, define them as @propertyName *property value*.
 
+@subsection three columns
+
+- 1
+- 2
+- 3
+
 #### Page example:
 
 @section code
@@ -73,6 +87,8 @@ Every page can pass custom properties to handlebars template engine, define them
 
 **mdwebsite** exends markdown syntax with several additional commands that enable advanced formatting.
 
+<video controls src="/video/pexels-video-618513234.mp4"></video>
+
 ### @section
 ----
 **`@section`** keyword defines a section - a part of page that may contain text, image, code blok (like the one above).
@@ -91,7 +107,6 @@ Possible modifiers:
 - `extra-top-padding` — adds space above section content;
 - `extra-bottom-padding` — adds space below section content;
 - `text-shadow` — adds shadow to text in section;
-
 
 ### @subsection
 ----
@@ -117,6 +132,10 @@ Possible modifiers:
 ### Height modifiers
 ----
 Heigth modifiers — css classes that are calculated whenever page resizes:
+
+@subsection image-shadow default
+
+![image](/images/city.jpg "Here's image title")
 
 - height-*xx*
 - min-height-*xx*
