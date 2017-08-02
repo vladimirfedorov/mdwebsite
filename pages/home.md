@@ -12,7 +12,7 @@
 
 ### much faster
 
-@subsection three columns dark-background text-strong
+@subsection three columns dark-background 
 
 - ### Fast
 
@@ -31,7 +31,7 @@
   This page is, actually, also a markdown page.
 
 
-@section video "/video/pexels-video-618513234.mp4" min-height-80 dark-content dark-cover-40
+@section video "/video/pexels-video-618513234.mp4" min-height-80 dark-content dark-cover-60
 
 # Hello there
 
