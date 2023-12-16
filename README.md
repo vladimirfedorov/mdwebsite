@@ -1,6 +1,8 @@
 # mdwebsite
 markdown-based web site with predefined styles and syntax extensions
 
+⚠️ This project hasn't been in active development and is archived now. This is a Node.js project, and some of its dependencies, like Handlebars, are known to have vulnerabilities. If you're going to use this code, please make sure to update the dependencies and the `mdwebsite` code accordingly first.
+
 ## How it works
 
 **mdwebsite** helps to deploy small websites, landing pages and web services in a minute. 
